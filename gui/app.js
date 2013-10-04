@@ -6,7 +6,8 @@ var blogController = require('./controllers/blogController');
 // app config and middleware
 app.engine('html', hbs.__express);
 app.set('view engine', 'html');
-app.use(express.static('./public'));
+app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + '/public'));
 app.use(express.bodyParser());
 app.listen(3000);
 

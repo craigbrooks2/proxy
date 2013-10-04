@@ -1,7 +1,7 @@
 var http = require('http');
 var url = require('url');
-//var logger = require('logger');
-var mappings = require('mappings');
+//var logger = require('./logger');
+var mappings = require('./mappings');
 
 http.createServer(function(req, res){
 	var parsedURL = url.parse(req.url);
