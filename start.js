@@ -19,6 +19,7 @@ var numberOfCpus = require('os').cpus().length;
     {
         //load up your application as a worker
         require('./proxy_server/start_server');
+        require('./proxy_server/test');
         require('./gui/app');
     }
     
