@@ -1,0 +1,14 @@
+<div>
+{{#each entries}}
+   <p>
+      <a href="/blog/article/{{id}}">{{title}}</a><br/>
+      Published: {{published}}
+   </p>
+{{/each}}
+<p>{{error}}</p>
+<form action="/blog/article" method="POST">
+<input name="articleID" type="text" /><br/>
+<input type="submit" value="Submit" />
+</form>
+</div>
+ 
